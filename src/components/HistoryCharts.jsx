@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import useAxios from '../hooks/useAxios';
 import moment from "moment";
+import Skeleton from './Skeleton';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -34,7 +35,7 @@ const HistoryCharts = () => {
   if(!response) {
     return (
       <div className="wrapper-container mt-8">
-        {/* <Skeleton className="h-72 w-full mb-10" /> */}
+        <Skeleton className="h-72 w-full mb-10" />
       </div>
     )
   }
