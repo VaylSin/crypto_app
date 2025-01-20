@@ -25,12 +25,12 @@ ChartJS.register(
   Tooltip,
   Filler,
   Legend
-);
+);	
 
 const HistoryCharts = () => {
 
   const { id } = useParams();
-  const { response } = useAxios(`coins/${id}/market_chart?vs_currency=usd&days=15`);
+  const { response } = useAxios(`coins/${id}/market_chart?vs_currency=usd&days=15&x_cg_demo_api_key=CG-9Z997htdtGoahzn9QqHEstiW&x_cg_demo_api_key=CG-9Z997htdtGoahzn9QqHEstiW`);
   
   if(!response) {
     return (

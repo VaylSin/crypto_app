@@ -6,7 +6,7 @@ import { TrendingDown, TrendingUp } from '../icons/icons'
 const Coin = ({coin}) => {
   return (
     <Link to={`/coin/${coin.id}`}>
-        <div className="grid grid-cols-3 sm:grid-cols-4 font-light p-2 rounded border-grey-200 border-b hover:bg-gray-200">
+        <div className="grid grid-cols-3 sm:grid-cols-4 font-light p-2 rounded border-grey-200 border-b hover:bg-gray-600 items-center">
             <div className='flex items-center gap-1 w-full'>
                 <img className='w-6' src={coin.image} alt={coin.name} />
                 <p>{coin.name}</p>

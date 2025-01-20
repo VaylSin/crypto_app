@@ -4,7 +4,7 @@ import Markets from '../components/Markets'
 
 const CryptoHome = () => {
   return (
-    <div className="wrapper-container">
+    <div className="wrapper-container ">
       <Trending />
       <Markets />
     </div>

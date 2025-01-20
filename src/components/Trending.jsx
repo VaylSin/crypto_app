@@ -20,8 +20,10 @@ const Trending = () => {
     }
     return (
         <div className="mt-8">
-            <h1 className='text-2xl mb-8'>Trending</h1>
-            {response && response.coins.map( coin => <CoinTrending key={coin.item.coin_id} coin={coin.item} />)}
+            <h1 className='text-2xl mb-8'>Les principaux cours du marché actuel</h1>
+            <div className="grid grid-cols-4 gap-4 trends_container">
+                {response && response.coins.map( coin => <CoinTrending key={coin.item.coin_id} coin={coin.item} />)}
+            </div>
         </div>
     )
 }
